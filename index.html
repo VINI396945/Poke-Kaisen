@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke-Kaisen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="src/img/icone-pockaisen.png" type="image/png"> <!-- ícone da aba do site -->
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+</head>
+<body>
+    <main>
+        <div class="Pockaisen">
+            <div class="Cartoes-Pockaisen">
+                <!-- Cartão Sukuna -->
+                <div class="cartao-Pockaisen tipo-Rei-das-maldiçoes aberto" id="cartao-Sukuna">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Sukuna</h2>
+                        <span>#001</span>
+                    </div>
+                    <span class="tipo">Rei das Maldições</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-Sukuna.jpg" alt="Imagem de Sukuna">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>"Rei das Maldições", Sukuna era um feiticeiro humano poderoso cuja morte o transformou em uma maldição.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão Gojo -->
+                <div class="cartao-Pockaisen" id="cartao-Gojo">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Satoru Gojo</h2>
+                        <span>#002</span>
+                    </div>
+                    <span class="tipo">Feiticeiro Jujutsu</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-Gojo.jpg" alt="Imagem de Satoru Gojo">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Gojo é o feiticeiro mais poderoso de todos e mentor de Itadori, Megumi e Nobara.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão Geto -->
+                <div class="cartao-Pockaisen" id="cartao-Geto">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Geto</h2>
+                        <span>#003</span>
+                    </div>
+                    <span class="tipo">Traidor</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-Geto.jpg" alt="Imagem de Geto">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Geto, ex-amigo de Gojo, rebelou-se contra o sistema de exorcistas e quer eliminar "não-feiticeiros".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão Mahito -->
+                <div class="cartao-Pockaisen" id="cartao-Mahito">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Mahito</h2>
+                        <span>#004</span>
+                    </div>
+                    <span class="tipo">Maldição</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-Mahito.jpg" alt="Imagem de Mahito">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Mahito é uma maldição sádica que personifica o ódio humano e experimenta com almas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão Megumi -->
+                <div class="cartao-Pockaisen" id="cartao-Megumi">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Megumi</h2>
+                        <span>#005</span>
+                    </div>
+                    <span class="tipo">Feiticeiro Jujutsu</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-megumi.jpg" alt="Imagem de Megumi">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Megumi, aluno de Gojo, é reservado, focado e altruísta, sempre protegendo os outros.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão Toji -->
+                <div class="cartao-Pockaisen" id="cartao-Toji">
+                    <div class="Cartao-topo">
+                        <h2 class="nome">Toji</h2>
+                        <span>#006</span>
+                    </div>
+                    <span class="tipo">Sem Maldição</span>
+                    <div class="Cartao-img">
+                        <img src="src/img/pockaisen-TOJI.jpg" alt="Imagem de Toji">
+                    </div>
+                    <div class="Cartao-informaçoes">
+                        <div class="descricao">
+                            <h3>Descrição</h3>
+                            <p>Toji, pai de Megumi, rejeitou o clã Zenin e desenvolveu habilidades físicas sobre-humanas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navegação de personagens -->
+            <nav class="listagem">
+                <ul>
+                    <li class="pockaisen ativo" id="Sukuna">
+                        <img src="./src/img/pockaisen-Sukuna.jpg" alt="Sukuna">
+                        <span>Sukuna</span>
+                    </li>
+                    <li class="pockaisen" id="Gojo">
+                        <img src="./src/img/pockaisen-Gojo.jpg" alt="Satoru Gojo">
+                        <span>Satoru Gojo</span>
+                    </li>
+                    <li class="pockaisen" id="Geto">
+                        <img src="./src/img/pockaisen-Geto.jpg" alt="Geto">
+                        <span>Geto</span>
+                    </li>
+                    <li class="pockaisen" id="Mahito">
+                        <img src="./src/img/pockaisen-Mahito.jpg" alt="Mahito">
+                        <span>Mahito</span>
+                    </li>
+                    <li class="pockaisen" id="Megumi">
+                        <img src="./src/img/pockaisen-megumi.jpg" alt="Megumi">
+                        <span>Megumi</span>
+                    </li>
+                    <li class="pockaisen" id="Toji">
+                        <img src="./src/img/pockaisen-TOJI.jpg" alt="Toji">
+                        <span>Toji</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <p>Criado por Vinícius Covelo Silva Justo</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const personagens = document.querySelectorAll(".listagem .pockaisen");
+            const cartoes = document.querySelectorAll(".cartao-Pockaisen");
+
+            function removerAtivo() {
+                personagens.forEach(personagem => personagem.classList.remove("ativo"));
+                cartoes.forEach(cartao => cartao.classList.remove("aberto"));
+            }
+
+            personagens.forEach(personagem => {
+                personagem.addEventListener("click", function() {
+                    const personagemId = personagem.id;
+                    const cartaoCorrespondente = document.getElementById(`cartao-${personagemId}`);
+
+                    removerAtivo();
+
+                    personagem.classList.add("ativo");
+                    cartaoCorrespondente.classList.add("aberto");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

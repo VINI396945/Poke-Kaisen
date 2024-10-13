@@ -1,0 +1,228 @@
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfonutmblW0WMtVuL70G12cic7HTZ4Tl16Q&s') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(3px); /* Aplica o desfoque apenas à imagem de fundo */
+    z-index: -1; /* Mantém a imagem no fundo */
+}
+
+main {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem de fundo */
+    color: white;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Sobreposição de cor escura para melhorar a legibilidade */
+    z-index: 0; /* Fica entre o conteúdo e a imagem de fundo */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent; /* Deixa o fundo do footer transparente */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; /* Certifique-se que ele fique acima do conteúdo */
+}
+
+footer p {
+    color: rgba(255, 0, 0, 0.5); /* Cor vermelha com 50% de transparência */
+    font-size: 14px;
+    margin: 0;
+    pointer-events: none; /* Evita interação do usuário com o texto */
+}
+
+
+/* Layout dos cartões e listagem */
+.Pockaisen {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Cartoes-Pockaisen {
+    width: 65%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.cartao-Pockaisen {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.cartao-Pockaisen.aberto {
+    display: block;
+}
+
+.cartao-Pockaisen:hover {
+    transform: scale(1.05);
+}
+
+.Cartao-topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #e2e2e2;
+    border-radius: 10px 10px 0 0;
+}
+
+.nome {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tipo {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.Cartao-img {
+    width: 100%;
+    text-align: center;
+}
+
+.Cartao-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.Cartao-informaçoes {
+    padding: 15px;
+}
+
+.descricao h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Listagem de personagens */
+nav.listagem {
+    width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover,
+nav ul li.ativo {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul li span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .Cartoes-Pockaisen {
+        width: 100%;
+    }
+
+    .cartao-Pockaisen {
+        width: 45%;
+    }
+
+    nav.listagem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartao-Pockaisen {
+        width: 100%;
+    }
+
+    .Cartoes-Pockaisen {
+        justify-content: center;
+    }
+}
+
+.listagem li:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+    transition: background-color 0.2s, transform 0.2s;
+ }
+
+ .pockaisen {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+ }
+ 
+ .pockaisen:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
